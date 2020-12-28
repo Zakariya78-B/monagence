@@ -8,8 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
 import { AdminPropertiesComponent } from './admin/admin-properties/admin-properties.component';
-import { SafeComponent } from './zak/safe/safe.component';
-import { ZakPropertieComponent } from './zak/zak-propertie/zak-propertie.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
@@ -20,8 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     AdminDashboardComponent,
     AdminPropertiesComponent,
-    SafeComponent,
-    ZakPropertieComponent,
+
   ],
   imports: [
     BrowserModule,
