@@ -8,6 +8,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule } from '@angular/material/dialog';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatNativeDateModule} from '@angular/material/core'
+
 
 
 @NgModule({
@@ -21,7 +27,12 @@ import { MatDialogModule } from '@angular/material/dialog';
         MatIconModule,
         MatCardModule,
         MatGridListModule,
-        MatDialogModule
+        MatDialogModule,
+        MatToolbarModule,
+        MatRadioModule,
+        MatDatepickerModule,
+        MatCheckboxModule,
+        MatNativeDateModule,
     ],
     exports: [
         CommonModule,
@@ -32,7 +43,12 @@ import { MatDialogModule } from '@angular/material/dialog';
         MatIconModule,
         MatCardModule,
         MatGridListModule,
-        MatDialogModule
+        MatDialogModule,
+        MatToolbarModule,
+        MatRadioModule,
+        MatDatepickerModule,
+        MatCheckboxModule,
+        MatNativeDateModule,
     ]
 })
 export class MaterialDesignModule { }

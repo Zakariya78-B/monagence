@@ -10,6 +10,9 @@ import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard
 import { AdminPropertiesComponent } from './admin/admin-properties/admin-properties.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MedecinsComponent } from './medecins/medecins.component';
+import { MedecinComponent } from './medecins/medecin/medecin.component';
+import { MedecinService } from './medecins/shared/medecin.service'
 
 
 @NgModule({
@@ -19,6 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     AdminDashboardComponent,
     AdminPropertiesComponent,
+    MedecinsComponent,
+    MedecinComponent,
 
   ],
   imports: [
@@ -27,9 +32,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MaterialDesignModule
+    MaterialDesignModule,
   ],
-  providers: [],
+  providers: [MedecinService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
