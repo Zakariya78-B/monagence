@@ -22,5 +22,6 @@ export class MedecinComponent implements OnInit {
 
   onClear(){
     this.mserv.form.reset();
+    this.mserv.initializeFormGroup();
   }
 }

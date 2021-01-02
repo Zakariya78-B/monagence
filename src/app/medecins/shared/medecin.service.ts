@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { AngularFireDatabase , AngularFireList} from 'angularfire2/database';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MedecinService {
 
-  constructor() { }
+  constructor(private firebase: AngularFireDatabase, private medecinList:AngularFireList<any>) { }
+  
+ 
 
   form: FormGroup = new FormGroup({
     $key: new FormControl(null),
@@ -33,5 +36,9 @@ export class MedecinService {
       isPermanent: false
     });
   
+  }
+  getMedecins(){
+    this.medecinList = this.firebase.list('medecins');
+    return this.medecinList.snapshotChanges();
   }
 }
